@@ -7,5 +7,22 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+  let extension = [".com", ".net", ".us", ".io", ".digital"];
+
+  for (let i of pronoun) {
+    for (let j of adj) {
+      for (let k of noun) {
+        for (let l of extension) {
+          document.querySelector("#domainslisted").innerHTML +=
+            "<li>" + i + j + k + l + "</li>";
+        }
+      }
+    }
+  }
+
+  console.log("Hello Rigo from the console.");
 };
